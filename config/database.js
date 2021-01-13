@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'bookshelf',
       settings: {
-        "adapter": "mysql",
+        "client": "mysql",
         "host": "db-mysql-fra1-15489-do-user-2478552-0.b.db.ondigitalocean.com",
         "user": "doadmin",
         "password": "k7xnov59g22l3wz1",
@@ -15,6 +15,7 @@ module.exports = ({ env }) => ({
       },
       options: {
         useNullAsDefault: true,
+        ssl: true,
       },
     },
   },
